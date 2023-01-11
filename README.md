@@ -15,6 +15,6 @@ En partant d'un code existant :
 
 ## En cours
 Ajouter de nouvelles fonctionnalités
-- faire un choix 2, qui devra permettre 
+- faire un choix 2, qui devra permettre d'obtenir la météo d'une ville défini
 
 ## Aperçu
