@@ -7,7 +7,7 @@ HOST = "localhost"
 DATABASE = "application_meteo_db"
 USER = "dev"
 PASSWORD = "test2"
-PORT = 5432
+PORT = 5433
 
 
 def connect():
