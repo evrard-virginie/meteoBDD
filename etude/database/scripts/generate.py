@@ -16,12 +16,12 @@ if __name__ == '__main__':
     # adapter les valeurs en rapport avec la configuration de votre environnement
     # de développement
     SERVER = "127.0.0.1"
-    PORT = 5432
+    PORT = 5433
     USER = "dev"
     PASSWORD = "test2"
     SCRIPTS_DIRECTORY = "C:\\Users\\Virginie\\Envs\\meteoBDD\\etude\\database\\scripts\\"
     DATABASE = "application_meteo_db"
-    POSTGRESQL_BIN = "C:\\Program Files\\PostgreSQL\\13\\bin"
+    POSTGRESQL_BIN = "C:\\Program Files\\PostgreSQL\\15\\bin"
 
     SCRIPT_00 = "00_create_tables.sql"
     SCRIPT_01 = "01_departement_sql_insert.sql"

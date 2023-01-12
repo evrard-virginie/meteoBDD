@@ -11,7 +11,6 @@ CREATE TABLE public.ville (
 CREATE TABLE
 -- ddl-end --
 ALTER TABLE public.ville OWNER TO dev_role;
-ALTER TABLE
 -- ddl-end --
 -- object: public.prevision | type: TABLE --
 DROP TABLE IF EXISTS public.prevision CASCADE;
@@ -46,7 +45,6 @@ COMMENT ON COLUMN public.prevision.last_update IS E'verifie si l info a moins de
 COMMENT
 -- ddl-end --
 ALTER TABLE public.prevision OWNER TO dev_role;
-ALTER TABLE
 -- ddl-end --
 -- object: public.departement | type: TABLE --
 DROP TABLE IF EXISTS public.departement CASCADE;
@@ -60,7 +58,6 @@ CREATE TABLE public.departement (
 CREATE TABLE
 -- ddl-end --
 ALTER TABLE public.departement OWNER TO dev_role;
-ALTER TABLE
 -- ddl-end --
 -- object: departement_fk | type: CONSTRAINT --
 -- ALTER TABLE public.ville DROP CONSTRAINT IF EXISTS departement_fk CASCADE;

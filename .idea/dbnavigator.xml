@@ -27,29 +27,15 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="ce31e88b-2f3b-4547-ab87-250427c29cc2">
-      <console name="application_meteo_db" type="STANDARD" schema="public" session="Main"><![CDATA[select * from prevision;
-
-select prevision.humidite from prevision inner join ville on prevision.id_ville = ville.id_ville where ville.nom = 'Narbonne' limit 5;]]></console>
+    <connection id="898badd2-db86-4818-ba49-52bfd54ed96f">
+      <console name="application_meteo_db" type="STANDARD" schema="information_schema" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="ce31e88b-2f3b-4547-ab87-250427c29cc2" />
-  </component>
-  <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="ce31e88b-2f3b-4547-ab87-250427c29cc2" dataset="public.ville" active-filter-id="2c5d3c57-445d-42ad-add7-9a36e563e4f3">
-      <filter id="2c5d3c57-445d-42ad-add7-9a36e563e4f3" name="18" temporary="false" custom-name="false" type="basic" join-type="AND">
-        <condition column="id_ville" operator="=" value="18" active="true" />
-      </filter>
-    </filter-actions>
-    <filter-actions connection-id="ce31e88b-2f3b-4547-ab87-250427c29cc2" dataset="public.departement" active-filter-id="EMPTY_FILTER">
-      <filter id="63b5ae3c-2f91-42c8-ab65-eea491045994" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
-        <condition column="id_departement" operator="=" value="" active="true" />
-      </filter>
-    </filter-actions>
+    <connection id="898badd2-db86-4818-ba49-52bfd54ed96f" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -85,20 +71,20 @@ select prevision.humidite from prevision inner join ville on prevision.id_ville 
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="ce31e88b-2f3b-4547-ab87-250427c29cc2" active="true" signed="false">
+      <connection id="898badd2-db86-4818-ba49-52bfd54ed96f" active="true" signed="false">
         <database>
           <name value="application_meteo_db" />
           <description value="" />
           <database-type value="POSTGRES" />
           <config-type value="BASIC" />
-          <database-version value="13.6" />
+          <database-version value="15.1" />
           <driver-source value="BUILTIN" />
           <driver-library value="" />
           <driver value="" />
           <url-type value="DATABASE" />
           <host value="localhost" />
-          <port value="5432" />
-          <database value="application_meteo_db" />
+          <port value="5433" />
+          <database value="postgres" />
           <type value="USER_PASSWORD" />
           <user value="dev" />
           <deprecated-pwd value="dGVzdDI=" />
