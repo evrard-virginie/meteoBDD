@@ -9,17 +9,17 @@ DESCRIPTION_NOMBRE_COLONNES = 20
 JOUR_NOMBRE_COLONNES = 25
 
 
-def _fermer_section(message, taille_section, caractere_fin_destion):
+def _fermer_section(message, taille_section, caractere_fin_section):
     """
     Une section est une zone du tableau, ici clôturée par le caractère proposé en paramètre, en fonction de la taille
     de la section souhaitée
     :param message: le texte à afficher
     :param taille_section: la taille de la section souhaité (en nombre de caracères)
-    :param caractere_fin_destion: le caractère de clôture de section souhaité
+    :param caractere_fin_section: le caractère de clôture de section souhaité
     :return: la chaine de caractère formatée avec le caractère de clôture
     """
     nombre_caractere_ajout = taille_section - 1 - len(message)
-    chaine_complement = " " * nombre_caractere_ajout + caractere_fin_destion
+    chaine_complement = " " * nombre_caractere_ajout + caractere_fin_section
     return message + chaine_complement
 
 
@@ -159,14 +159,15 @@ def afficher_ecran_accueil():
     consultation directe
     """
     print()
-    print(" " + ("-" * (ECRAN_NOMBRE_COLONNES - 3)) + " ")
+    print(" " + ("-" * (ECRAN_NOMBRE_COLONNES - 10)) + " ")
     print(" " + (" " * (ECRAN_NOMBRE_COLONNES - 3)) + " ")
     print(" Bienvenue dans ce programme météo, que souhaitez-vous faire ?")
     print(" " + (" " * (ECRAN_NOMBRE_COLONNES - 3)) + " ")
     print("     1) Chercher une ville (tapez 1 et appuyez sur la touche entrée)")
     print("     2) Consulter la météo d'une ville (tapez 2 et appuyez sur la touche entrée)")
+    print("     3) Obtenir une information intéressante sur l'histoire de la météo (tapez 3 et appuyer sur la touche entrée")
     print(" " + (" " * (ECRAN_NOMBRE_COLONNES - 3)) + " ")
-    print(" " + ("-" * (ECRAN_NOMBRE_COLONNES - 3)) + " ")
+    print(" " + ("-" * (ECRAN_NOMBRE_COLONNES - 10)) + " ")
 
 
 def afficher_liste_ville(choix_ville_recherche):

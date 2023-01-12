@@ -88,7 +88,7 @@ if __name__ == '__main__':
 
                 # on récupère le choix fait par l'utilisateur
                 print()
-                choix_utilisateur = int(input("Quel est votre choix (1 ou 2) ? "))
+                choix_utilisateur = int(input("Quel est votre choix (1, 2 ou 3) ? "))
 
                 # si l'utilisateur choisit la première proposition de l'écran d'accueil, alors on lui demande
                 # de saisir le nom de la ville qu'il recherche (une partie du nom suffit pour lancer la recherche)
@@ -101,11 +101,11 @@ if __name__ == '__main__':
                     # on vérifie si la recherche à bien renvoyé un résultat (pour ne pas travailler sur des données
                     # inexistantes et générer une erreur technique)
                     if liste_villes == None:
-                        print("Désolé, aucune ville corespondante n'a été trouvée.")
+                        print("'_' aucune ville correspondante n'a été trouvée.")
                     else:
                         # si la variable existe mais que le nombre de ville est égale à zéro, on prévient l'utilisateur
                         if len(liste_villes) == 0:
-                            print("Désolé, aucune ville corespondante n'a été trouvée.")
+                            print("-_- aucune ville correspondante n'a été trouvée.")
                         else:
                             # construction d'un dictionnaire pour classer les villes et permettre à l'utilisateur
                             # de les sélectionner par un numéro
@@ -133,7 +133,7 @@ if __name__ == '__main__':
                 elif choix_utilisateur == 2:
                     pass
                 else:
-                    print("Désolé votre choix n'est pas un 1 ou 2, que souhaitez-vous faire ?")
+                    print("Désolé votre choix est incorrect, que voulez-vous choisir 1, 2 ou 3 ?")
     except getopt.GetoptError:
         print("Paramètres incorrects !")
         usage()
